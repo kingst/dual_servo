@@ -14,7 +14,7 @@ ISP_HIGH_FUSE = 0xde
 ISP_LOW_FUSE = 0xff
 ISP_EXT_FUSE = 0x05
 
-include ../../../Arduino-Makefile/arduino-mk/Arduino.mk
+include Arduino.mk
 
 up: build-cli/arduino.hex
 	$(AVRDUDE) -D -C $(AVRDUDE_CONF) -c $(AVRDUDE_ARD_PROGRAMMER) \

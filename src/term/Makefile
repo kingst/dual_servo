@@ -11,7 +11,7 @@ OBJS = main.o
 -include $(OBJS:.o=.d)
 
 term: $(OBJS)
-	$(CC) $(INCLUDE) -o $@ $(CFLAGS) $(LIBS) $(FREE_LIBS) $(OBJS)
+	$(CC) $(INCLUDE) -o $@ $(CFLAGS) $(LIBS) $(OBJS)
 
 %.d: %.cpp
 	set -e; $(CC) $(INCLUDE) -MM $(CFLAGS) $< \

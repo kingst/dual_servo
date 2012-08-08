@@ -1,4 +1,4 @@
-*.py[co]
+*.[do]
 
 # Packages
 *.egg
@@ -25,3 +25,5 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+build-cli
